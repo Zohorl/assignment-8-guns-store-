@@ -1,9 +1,17 @@
 import React from 'react';
-
-const Guns = () => {
+import './Guns.css'
+const Guns = (props) => {
+    const { name, img, price } = props.gun;
     return (
-        <div>
-            <h1>Guns store</h1>
+        <div className='gun'>
+            <img src={img} alt="" />
+            <div className="gun-info">
+                <p>Name : {name}</p>
+                <p>Price : ${price}</p>
+                <button className='btn-cart'>
+                    <p className='btn-text'>Add to Cart</p>
+                </button>
+            </div>
         </div>
     );
 };
