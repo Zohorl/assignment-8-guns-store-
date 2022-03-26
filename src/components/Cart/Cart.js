@@ -2,17 +2,12 @@ import React from 'react';
 import './Cart.css'
 const Cart = ({ cart }) => {
     // console.log(cart)
-    let total = 0;
-    for (const gun of cart) {
-        // console.log(gun);
-        total = total + parseFloat(gun.price);
-        const x = gun.name;
-
-    }
     return (
         <div className='cart'>
-
-            <h5>price : {total}</h5>
+            <h3>Your gun list :</h3>
+            {
+                cart.map(gun => <h4>{gun.name}</h4>)
+            }
         </div>
     );
 };

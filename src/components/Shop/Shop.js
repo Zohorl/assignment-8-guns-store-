@@ -13,18 +13,19 @@ const Shop = () => {
     const handleAddToCart = (gun) => {
         const newCart = [...cart, gun];
         setCart(newCart);
-        // console.log('clicked');
+        // console.log(newCart);
     }
     return (
         <div>
             <h2>Guns store</h2>
+            <h3>Choose your Guns</h3>
             <div className='shop-container'>
                 <div className="guns-container">
                     {
                         guns.map(gun => <Guns
-                            handleAddToCart={handleAddToCart}
                             key={gun.id}
                             gun={gun}
+                            handleAddToCart={handleAddToCart}
                         ></Guns>)
                     }
                 </div>
