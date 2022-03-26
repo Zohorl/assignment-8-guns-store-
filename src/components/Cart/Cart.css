@@ -3,6 +3,12 @@
     position: sticky;
     top: 0;
 }
+.randon-item{
+    background-color: palevioletred;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
 .btn-random{
     margin-top: 15px;
     border: none;
