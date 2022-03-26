@@ -24,6 +24,9 @@
     align-items: center;
     justify-content: center;
 }
+.btn-cart p{
+    margin-right: 5px;
+}
 .btn-cart:hover{
     background-color: orange;
 }
